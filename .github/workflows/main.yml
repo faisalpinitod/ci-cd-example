@@ -20,12 +20,11 @@ name: Github action
 on:
   push:
     branches:[master]
-
 jobs:
   build:
     rund-on: window11
     steps:
-      - users: actions/checkount@v3
+      - uses: actions/checkount@v3
       - name: Print node version
         run: node --version
       - name: Print NPM version
