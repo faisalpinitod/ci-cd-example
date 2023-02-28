@@ -1,1 +1,35 @@
 #Workflow
+# title: Website Name
+# description: A website for uploadinf content
+
+# tags:
+#   - technology
+#   - images
+#   - creative
+
+# address:
+#   city: Banglore
+#   state: Karnataka
+
+
+# value: ${{env.VALUE}}
+# variable: ${{git.VARIABLE_NAME}}
+
+
+name: Github action 
+on:
+  push:
+    branches:[master]
+
+jobs:
+  build:
+    rund-on: window11
+    steps:
+      - users: actions/checkount@v3
+      - name: Print node version
+        run: node --version
+      - name: Print NPM version
+        run: npm --version
+      - name: Print pwd
+        run: npm pwd
+      
