@@ -19,7 +19,7 @@
 name: Github action 
 on:
   push:
-    branches:[master]
+    branches: [master]
 jobs:
   build:
     rund-on: window11
